@@ -1,10 +1,21 @@
 ///////////////////////////////////////
 // Lecture: Hoisting
 
+calculateAge(1965);
+
+// function declaration, gets hoisted
+function calculateAge(year) {
+    console.log(2016 - year);
+}
 
 
 
+//function expression, does NOT get hoisted
+var calculateRetirement = function(year) {
+    console.log(65 - (2016-year));
+}
 
+calculateRetirement(1990);
 
 
 
