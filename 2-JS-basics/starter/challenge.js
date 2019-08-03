@@ -185,11 +185,231 @@ if (johnAverage === mikeAverage) {
 /**
  * Functions
  */
+/*
+function calculateAge(birthYear) {
+    return 2018 - birthYear;
+}
 
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
 
+console.log(ageJohn, ageMike, ageJane);
 
+function yearsUntilRetirement(birthYear, firstName) {
+    var age = calculateAge(birthYear);
+    var retirement = 65 - age;
+    if (retirement > 0) {
+        console.log(firstName + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(firstName + ' is already retired.');
+    }
+    
+}
 
+yearsUntilRetirement(1990, 'John');
+yearsUntilRetirement(1948, 'Mike');
+yearsUntilRetirement(1969, 'Jane');
 
+*/
+
+/**
+ * Function Statements and Expressions
+ */
+
+// Function Declaration
+/*
+function whatDoYouDo(job, firstName) {
+
+}
+*/
+
+ // Function Expression
+/*var whatDoYouDo = function(job, firstName) {
+    switch(job) {
+        case 'teacher':
+            return firstName + ' teaches kids how to code.';
+        case 'driver':
+            return firstName + ' drives a cab in Lisbon.';
+        case 'designer':
+            return firstName + ' designs beautiful websites.';
+        default:
+            return firstName + ' does something else.';
+    }
+}
+
+console.log(whatDoYouDo('teacher', 'John'));
+console.log(whatDoYouDo('designer', 'Jane'));
+console.log(whatDoYouDo('retired', 'Mark'));
+*/
+
+/**
+ * Arrays
+ */
+/* 
+ var names = ['John', 'Mark', 'Jane'];
+ var years = new Array(1990, 1969, 1948);
+
+ console.log(names[0]);
+ console.log(names.length);
+
+ names[1] = 'Ben';
+ names[names.length] = 'Mary';
+ console.log(names);
+
+// Different data types
+var john = ['John', 'Smith', 1990, 'teacher', false];
+
+console.log(john.push('blue'));
+console.log(john.unshift('Mr. '));
+console.log(john);
+console.log(john.shift());
+
+console.log(john.pop());
+console.log(john);
+
+console.log(john.indexOf(23));
+
+john.indexOf('designer') === -1 ? console.log('not a designer') : console.log('is a designer');
+
+ */
+
+ /**
+  * CODING CHALLENGE 3
+  * 
+  * john went to 3 different restaurants, bills were $124, $48, and $268
+  * 20% of bill if under $50
+  * 15% if bill is between $50 and $200
+  * 10% if bill is more than $200
+  * 
+  * 2 arrays:
+  * one containing all three tip amounts
+  * one containing all three final paid amounts
+  */
+
+/*   var firstBill = 124;
+  var secondBill = 48;
+  var thirdBill = 268;
+
+  var tips = [calculateTip(firstBill), calculateTip(secondBill), calculateTip(thirdBill)];
+  var total = [firstBill + tips[0], secondBill + tips[1], thirdBill + tips[2]];
+
+  function calculateTip(billAmount) {
+      switch (true) {
+        case billAmount < 50:
+            return billAmount * 0.20;
+        case billAmount < 200:
+            return billAmount * 0.15;
+        default:
+            return billAmount  * 0.10;
+      }
+  }
+
+  console.log(tips);
+  console.log(total); */
+
+/**
+ * Objects and properties
+ */
+/* 
+ // Object literal
+ var john = {
+     firstName: 'John',
+     lastName: 'Smith',
+     birthYear: 1990,
+     family: ['Jane', 'Mark', 'Bob', 'Emily'],
+     job: 'teacher',
+     isMarried: false
+ };
+ console.log(john);
+ console.log(john.firstName);
+ console.log(john['lastName']);
+ var x = 'birthYear';
+ console.log(john[x]);
+
+ john.job = 'designer';
+john['isMarried'] = true;
+ console.log(john);
+
+ // new Object syntax
+var jane = new Object();
+jane.firstName = 'Jane';
+jane.birthYear = '1969';
+jane['lastName'] = 'Smith';
+console.log(jane);  */
+
+/**
+ * Objects and Methods
+ */
+
+/* var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false,
+    calcAge: function() {
+        this.age = 2018 - this.birthYear;
+    }
+};
+
+john.calcAge();
+
+console.log(john);
+
+ */
+
+ /**
+  * CODING CHALLENGE 4
+  */
+ //full name, mass, height
+ //method for calculating BMI
+ //save BMI to object, return it from method
+ //log to console who has highest BMI, along with full name and BMI
+ // BMI = mass / height ^ 2
+/* 
+ var calculateBMI = function() {
+     this.BMI = this.mass / this.height**2;
+     return this.BMI;
+ }
+
+ var john = {
+     name: 'John Smith',
+     mass: 92,
+     height: 1.95,
+     calculateBMI: calculateBMI
+ }
+
+ var mark = new Object();
+ mark.name = 'Mark Derp';
+ mark['mass'] = 55,
+ mark.height = 1.8;
+ mark.calculateBMI = calculateBMI;
+
+ console.log(john, mark);
+
+ console.log(john.calculateBMI());
+ console.log(mark.calculateBMI());
+
+ if (john.BMI > mark.BMI) {
+     console.log('John has a higher BMI of ' + john.BMI);
+ } else if (john.BMI < mark.BMI) {
+     console.log('Mark has a higher BMI of ' + mark.BMI);
+ } else {
+     console.log('John and Mark have the same BMI of ' + john.BMI);
+ }
+  */
+
+/**
+ * Loops and iteration
+ */
+
+ console.log(1);
+
+ for (var i = 0; i < 10; i++) {
+     console.log(i);
+ }
 
 
 

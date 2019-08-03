@@ -92,7 +92,7 @@ console.log(typeof x);
  * Operator precedence
  */
 
-var now = 2018;
+/* var now = 2018;
 var yearJohn = 1989;
 var fullAge = 18;
 
@@ -103,3 +103,4 @@ var ageJohn = now - yearJohn;
 var ageMark = 35;
 var average = (ageJohn + ageMark) / 2
 console.log(average);
+ */
